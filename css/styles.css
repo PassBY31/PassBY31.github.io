@@ -52,6 +52,9 @@ main {
     color: #fff;
     padding: 10px;
     font-family: sans-serif;
+    a {
+        color: #1868be; /* 设置链接的颜色 */
+    }
 }
 
 attactive {
