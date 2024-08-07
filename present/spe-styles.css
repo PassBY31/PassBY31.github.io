@@ -1,0 +1,74 @@
+
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the container */
+.container {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Set maximum width to prevent content from stretching too wide on large screens */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Add some padding inside the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/*链接样式*/
+/* .blue-underline {
+    color: blue;
+    text-decoration: underline;
+} 蓝色，有下划线
+
+.white-no-underline {
+    color: white;
+    text-decoration: none;
+} 白色，无下划线
+*/
+
+
+
+/* Example styles for header, main content, and footer */
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-family: "微软雅黑", sans-serif;
+    font-size: x-large;
+    a {
+        color: #ffffff; /* 设置链接的颜色 */
+        text-decoration: none; /* 取消链接的下划线 */
+    }
+    
+    a:hover {
+        color: #1868be; /* 设置链接在鼠标悬停时的颜色 */
+    }
+}
+
+main {
+    background-color: #323233;
+    color: #fff;
+    padding: 10px;
+    font-family: sans-serif;
+    a {
+        color: #1868be; /* 设置链接的颜色 */
+    }
+}
+
+attactive {
+    font-family: "方正行楷繁简", cursive;
+}
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-family: "Consolas", monospace, sans-serif;
+    font-size: larger;
+    a {
+        color: #1868be; /* 设置链接的颜色 */
+    }
+}
