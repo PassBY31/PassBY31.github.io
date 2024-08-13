@@ -67,7 +67,7 @@ footer {
     padding: 10px;
     text-align: left;
     font-family: "Consolas", monospace, sans-serif;
-    font-size: larger;
+    font-size: medium;
     a {
         color: #1868be; /* 设置链接的颜色 */
     }
