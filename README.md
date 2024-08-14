@@ -4,4 +4,4 @@
 
 该网站作为本人的个人站使用，若有意见，请提交到Issues处
 
-[联系我](passby31.github.io/noticeboard/get-on.html)
+[联系我](noticeboard/get-on.html)
