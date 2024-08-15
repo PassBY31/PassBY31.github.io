@@ -1,8 +1,6 @@
-# 个人学习笔记
+# html
 
-## html
-
-### 框架
+## 框架
 ```html
 <!DOCTYPE html>
 <html>
@@ -26,7 +24,7 @@
 ```
 
 
-### 引用方法：
+## 引用方法：
 
 位于同一文件夹下的文件，直接引用文件名 `example.html`
 
@@ -43,7 +41,7 @@
 email: `<a href="mailto (someone@example.com)> 打开某人的邮箱地址 </a>`
 
 
-### 打开页面方式(target):
+## 打开页面方式(target):
 
 `<a href="www.example.com" target="">` 当前页
 
