@@ -1,4 +1,4 @@
-**[笔记索引](noteindex)**
+**[笔记索引](../noteindex)**
 
 # html
 
