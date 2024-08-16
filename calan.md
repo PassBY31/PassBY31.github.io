@@ -7,18 +7,23 @@
 *什么是 `preview`?*
 
 >`Preview(pre)`:
+>
 >稳定的预览版
 
 >`Develop(dev)`:
+>
 >较不稳定的预览版
 
 >`Beta`:
+>
 >较稳定的开发版
 
 >`Canary(can)`:
+>
 >不稳定的开发版
 
->`Alpha`
+>`Alpha`:
+>
 >内部开发版
 
 ### v 0.0 `Alpha`
