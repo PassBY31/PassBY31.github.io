@@ -35,7 +35,7 @@ header {
     color: #fff;
     padding: 10px;
     text-align: left;
-    font-family: "微软雅黑", sans-serif;
+    font-family: "Noto Sans SC", "微软雅黑", sans-serif;
     font-size: x-large;
     a {
         color: #ffffff; /* 设置链接的颜色 */
@@ -51,7 +51,7 @@ main {
     background-color: #323233;
     color: #fff;
     padding: 10px;
-    font-family: sans-serif;
+    font-family: "Noto Sans SC", "微软雅黑", sans-serif;
     a {
         color: #1868be; /* 设置链接的颜色 */
     }
