@@ -1,53 +1,178 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            主页
-        </title>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="qtt 的个人主页 — 把想法写成代码与文字。" />
+  <title>qtt · 个人主页</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar" aria-label="主导航">
+    <button id="collapseToggle" class="brand" type="button" title="收起导航" aria-label="收起导航">
+      <span class="brand-mark">qt</span>
+      <div>
+        <b>qtt</b>
+        <small>PERSONAL SITE</small>
+      </div>
+    </button>
 
-        <link rel="stylesheet" href="css/styles.css">
-        <a href="index"> qintian </a> &nbsp;&nbsp;
-        <a href="blog"> 博客 </a>
-        &nbsp;&nbsp;
-        <a href="note/noteindex"> note </a>
+    <nav class="nav-list">
+      <a class="nav active" href="index.html" title="首页"><span>⌂</span><em>首页</em></a>
+      <a class="nav" href="projects.html" title="项目展示"><span>☰</span><em>项目展示</em></a>
+      <a class="nav" href="blog.html" title="个人博客"><span>✎</span><em>个人博客</em></a>
+      <a class="nav" href="index.html#about" title="关于我"><span>◎</span><em>关于我</em></a>
+      <a class="nav" href="index.html#contact" title="联系"><span>✉</span><em>联系</em></a>
+    </nav>
+
+    <div class="sidebar-note">
+      <b>Currently</b>
+      <span>前端 · 写作 · 开源<br />保持好奇，持续输出。</span>
+    </div>
+
+    <div class="side-footer">
+      <button id="darkMode" class="mode-btn" title="切换暗色模式"><span>☾</span><em>Dark Mode</em></button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Welcome · Personal Site</p>
+        <h1>qtt 的个人主页</h1>
+        <p class="mode-status">你好，欢迎来到 qtt 的个人站。</p>
+      </div>
+      <div class="top-actions">
+        <a class="compact-btn" href="projects.html">项目展示</a>
+        <a class="compact-btn" href="blog.html">阅读博客</a>
+      </div>
     </header>
-    <body>
-        <main>
-        <h1>
-            Welcome to my website!
-        </h1>
-        <br/>
-        <br/>
-        <h3>
-            个人信息
-        </h3>
-        <p>
-            新初三学生<del> 畜生高 </del>初升高
-            <br/>
-            <br/>
-            OIer 参加CSP-J(初赛是个问题)
-            &nbsp;&nbsp;
-            复赛骗分？正是在下
-            <br/>
-            <br/>
-            熟练使用C++, markdown, python, html入门
-            <br/>
-            GPT大法好(bushi)
-        </p>
-        <br/>
-        </main>
-        <footer>
-            copyright © qintian 2024 <br/>
-            这是一个开源(open source)网站 <br/>
-            <a href = "https://github.com/PassBY31/PassBY31.github.io"> 项目地址(github) </a>
-            &nbsp; &nbsp; &nbsp;
-            <a href="noticeboard/get-on"> 联系我们 </a> 
-            &nbsp; &nbsp; &nbsp;
-            <a href="about"> 关于 </a>
-            &nbsp; &nbsp; &nbsp;
-            <a href="map"> 站点地图 </a>
-        </footer>
-    </body>
+
+    <!-- Hero + 一句话简介 -->
+    <section class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">Code · Words · Curiosity</p>
+        <h2>你好，我是 qtt。<br />把想法写成代码与文字。</h2>
+        <p>一名热爱前端与写作的开发者，专注于把复杂的问题拆解成清晰的表达。这里记录我的项目、文章与思考。</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="projects.html">查看项目 →</a>
+          <a class="secondary-btn" href="blog.html">阅读博客 →</a>
+          <a class="secondary-btn" href="index.html#about">关于我</a>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card"><b>12</b><span>开源项目</span></div>
+        <div class="stat-card"><b>36</b><span>博客文章</span></div>
+        <div class="stat-card"><b>8</b><span>技术栈</span></div>
+        <div class="stat-card"><b>2</b><span>年写作</span></div>
+      </div>
+    </section>
+
+    <!-- 关于我 / 技能 -->
+    <section id="about">
+      <div class="section-heading">
+        <div><p class="eyebrow">About</p><h2>关于我</h2></div>
+        <p>技术之外，也在意表达。</p>
+      </div>
+      <div class="about-grid">
+        <article class="panel">
+          <h3>自我介绍</h3>
+          <p>占位文字：我是 qtt，一名前端开发者与内容创作者。喜欢研究界面设计、打磨交互细节，也享受把技术心得写成文章。这里可以替换成你的真实经历、兴趣与正在做的事。</p>
+          <div class="tag-row">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag blue">JavaScript</span>
+            <span class="tag">Vue</span>
+            <span class="tag purple">写作</span>
+            <span class="tag rose">开源</span>
+          </div>
+        </article>
+        <article class="panel">
+          <h3>技能概览</h3>
+          <div class="skill-list">
+            <div class="skill-item"><b>前端开发</b><div class="bar"><i style="width:88%"></i></div></div>
+            <div class="skill-item"><b>界面设计</b><div class="bar"><i style="width:76%"></i></div></div>
+            <div class="skill-item"><b>技术写作</b><div class="bar"><i style="width:82%"></i></div></div>
+            <div class="skill-item"><b>项目管理</b><div class="bar"><i style="width:68%"></i></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 精选项目预览 -->
+    <section id="projects">
+      <div class="section-heading">
+        <div><p class="eyebrow">Projects</p><h2>精选项目</h2></div>
+        <a class="text-link" href="projects.html">全部项目 →</a>
+      </div>
+      <div class="project-grid">
+        <a class="project-card" href="projects.html">
+          <div class="project-meta"><span class="year">2026</span><span>FRONTEND</span></div>
+          <h3>项目一：占位标题</h3>
+          <p>这是项目一的占位描述，后续可在项目页补充真实内容、链接与截图。</p>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag blue">CSS</span></div>
+        </a>
+        <a class="project-card" href="projects.html">
+          <div class="project-meta"><span class="year">2025</span><span>TOOL</span></div>
+          <h3>项目二：占位标题</h3>
+          <p>这是项目二的占位描述，展示一个实用小工具或独立完成的组件库。</p>
+          <div class="tag-row"><span class="tag blue">JavaScript</span><span class="tag">Node</span></div>
+        </a>
+        <a class="project-card" href="projects.html">
+          <div class="project-meta"><span class="year">2024</span><span>WRITING</span></div>
+          <h3>项目三：占位标题</h3>
+          <p>这是项目三的占位描述，记录一次内容工程或开源协作的尝试。</p>
+          <div class="tag-row"><span class="tag purple">写作</span><span class="tag rose">开源</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 最新博客文章 -->
+    <section id="blog">
+      <div class="section-heading">
+        <div><p class="eyebrow">Blog</p><h2>最新文章</h2></div>
+        <a class="text-link" href="blog.html">全部文章 →</a>
+      </div>
+      <div class="article-list">
+        <a class="article-item" href="blog.html">
+          <div class="article-date"><b>08</b><span>08月</span></div>
+          <div><h3>占位文章标题一</h3><p>一句话摘要：记录最近的想法与踩坑。</p></div>
+          <span class="go">→</span>
+        </a>
+        <a class="article-item" href="blog.html">
+          <div class="article-date"><b>07</b><span>07月</span></div>
+          <div><h3>占位文章标题二</h3><p>一句话摘要：一次关于设计语言的思考。</p></div>
+          <span class="go">→</span>
+        </a>
+        <a class="article-item" href="blog.html">
+          <div class="article-date"><b>06</b><span>06月</span></div>
+          <div><h3>占位文章标题三</h3><p>一句话摘要：从零搭建静态站的完整流程。</p></div>
+          <span class="go">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 联系 / 社交 -->
+    <section id="contact">
+      <div class="section-heading">
+        <div><p class="eyebrow">Contact</p><h2>联系我</h2></div>
+        <p>欢迎交流与合作。</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener"><span class="ico">⌥</span> GitHub</a>
+        <a class="contact-link" href="mailto:hello@example.com"><span class="ico">✉</span> Email</a>
+        <a class="contact-link" href="https://twitter.com/" target="_blank" rel="noopener"><span class="ico">✈</span> Twitter</a>
+        <a class="contact-link" href="blog.html"><span class="ico">✎</span> Blog</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <span>© 2026 qtt · 保留所有权利</span>
+      <span><a href="about.html">关于此网站</a></span>
+    </footer>
+  </main>
+</div>
+<div id="navBackdrop" class="nav-backdrop" aria-hidden="true"></div>
+<script src="js/main.js"></script>
+</body>
 </html>

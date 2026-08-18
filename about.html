@@ -1,81 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            关于
-        </title>
-        <link rel="stylesheet" href="css/styles.css">
-        <a href="index"> qintian </a> &nbsp;&nbsp;
-        <a href="blog"> 博客 </a>
-        &nbsp;&nbsp;
-        <a href="note/noteindex"> note </a>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="关于 qtt 个人网站的介绍——技术、功能与设计来源。" />
+  <title>关于此网站 · qtt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar" aria-label="主导航">
+    <button id="collapseToggle" class="brand" type="button" title="收起导航" aria-label="收起导航">
+      <span class="brand-mark">qt</span>
+      <div>
+        <b>qtt</b>
+        <small>PERSONAL SITE</small>
+      </div>
+    </button>
+
+    <nav class="nav-list">
+      <a class="nav" href="index.html" title="首页"><span>⌂</span><em>首页</em></a>
+      <a class="nav" href="projects.html" title="项目展示"><span>☰</span><em>项目展示</em></a>
+      <a class="nav" href="blog.html" title="个人博客"><span>✎</span><em>个人博客</em></a>
+      <a class="nav" href="index.html#about" title="关于我"><span>◎</span><em>关于我</em></a>
+      <a class="nav" href="index.html#contact" title="联系"><span>✉</span><em>联系</em></a>
+    </nav>
+
+    <div class="sidebar-note">
+      <b>Currently</b>
+      <span>前端 · 写作 · 开源<br />保持好奇，持续输出。</span>
+    </div>
+
+    <div class="side-footer">
+      <button id="darkMode" class="mode-btn" title="切换暗色模式"><span>☾</span><em>Dark Mode</em></button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">About This Site</p>
+        <h1>关于此网站</h1>
+        <p class="mode-status">本站的技术、功能与设计来源。</p>
+      </div>
+      <div class="top-actions">
+        <a class="compact-btn" href="index.html">返回首页</a>
+      </div>
     </header>
-    <body>
-        <main>
-            <!--页面主区域-->
-            <h2>
-                关于本站
-            </h2>
-            <p>
-                <a href="https://passby31.github.io/"> https://passby31.github.io/ </a> 
-                &nbsp;
-                version 0.1.00.01 Alpha
-                <br/>
-                <a href="calan"> 版本日志 </a>
-            </p>
-            <p>
-                本站作为qintian的个人站使用，若需以任何形式商业转载，须征得本人同意
-                <br/>
-                <a href="noticeboard/get-on.html"> 联系我们 </a>
-            </p>
-            <p>
-                本站是一个
-                <b> 开源 (Open Source, 开放源代码) 项目 </b>
-                ，遵守主流开放源代码协议
-                <br/>
-                <a href = "https://github.com/PassBY31/PassBY31.github.io"> 项目地址(github) </a>
-                <br/>
-                对项目有意见/建议，请在 <i> issue </i> 处提出
-            </p>
-            
-            <h2>
-                用户守则
-            </h2>
-            <p>
-                待补充
-            </p>
-            <h2>
-                站点地图
-            </h2>
-            <p>
-                <a href="map"> 站点地图 </a>
-            </p>
-            <h2>
-                鸣谢
-            </h2>
-            <p>
-                <b> <a href="https://github.com"> Github </a> </b>
-                &nbsp;
-                为本站提供了代码托管(Github Pages)服务，Markdown支持
-            </p>
-            <p>
-                <b>ChatGPT</b>
-                &nbsp;
-                帮助了本站编写和搭建
-            </p>
-        </main>
-        <footer>
-            copyright © qintian 2024 <br/>
-            这是一个开源(open source)网站 <br/>
-            <a href = "https://github.com/PassBY31/PassBY31.github.io"> 项目地址(github) </a>
-            &nbsp; &nbsp; &nbsp;
-            <a href="noticeboard/get-on"> 联系我们 </a> 
-            &nbsp; &nbsp; &nbsp;
-            <a href="about"> 关于 </a>
-            &nbsp; &nbsp; &nbsp;
-            <a href="map"> 站点地图 </a>
-        </footer>
-    </body>
+
+    <div class="view-intro">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>这是一个怎样的网站</h2>
+        <p>纯静态个人站，离线可用，无需构建环境，可直接部署到 GitHub Pages。</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <article class="panel">
+        <h3>功能特性</h3>
+        <p>首页包含个人介绍、数据统计、关于我 / 技能、精选项目、最新博客与联系方式六大板块；另有项目展示页与个人博客页。支持暗色模式与侧边栏收起 / 展开。</p>
+      </article>
+      <article class="panel">
+        <h3>技术说明</h3>
+        <p>纯 HTML + CSS + 原生 JavaScript，零依赖、零构建。所有页面互链与静态资源均使用相对路径，任意静态托管可直接运行。</p>
+      </article>
+      <article class="panel">
+        <h3>设计来源</h3>
+        <p>视觉语言（奶油米背景、深蓝主色、圆角卡片与衬线大标题）借鉴 <em>Continuation Writing Studio V4.8</em> —— 一个离线使用的英语读后续写数字教材项目；本站将强调色由金色调整为青绿。</p>
+      </article>
+      <article class="panel">
+        <h3>维护信息</h3>
+        <p>站点内容（统计数字、项目、文章、联系方式）目前为占位，可通过编辑各页面 HTML 直接替换；样式与交互参数集中在 <code>css/style.css</code> 与 <code>js/main.js</code>。</p>
+      </article>
+    </div>
+
+    <footer class="page-footer">
+      <span>© 2026 qtt · 保留所有权利</span>
+      <span><a href="about.html">关于此网站</a></span>
+    </footer>
+  </main>
+</div>
+<div id="navBackdrop" class="nav-backdrop" aria-hidden="true"></div>
+<script src="js/main.js"></script>
+</body>
 </html>
